@@ -1,8 +1,6 @@
 fn main() {
-    let number = 3;
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
 
-    // if 语句没有括号
-    if number {
-        println!("condition was true");
-    }
+    println!("The value of number is: {number}");
 }
