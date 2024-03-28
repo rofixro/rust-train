@@ -1,17 +1,11 @@
 fn main() {
-    let s1 = String::from("Hello");
+    let mut s1 = String::from("hello");
 
-    let len = calculate_length(&s1);
+    change(&mut s1);
 
-    let sb = aaa(&s1);
-
-    println!("The length of '{s1}' is {len}.{sb}");
+    println!("{}", s1);
 }
 
-fn aaa(s: &String) -> usize {
-    s.len()
-}
-
-fn calculate_length(s: &String) -> usize {
-    s.len()
+fn change(some_string: &mut String) {
+    some_string.push_str(", world!"); // 可变引用是可以修改的
 }
