@@ -1,11 +1,10 @@
 fn main() {
     let mut s1 = String::from("hello");
 
-    change(&mut s1);
+    let r1 = &s1;
+    let r2 = &s1;
+    println!("{}, {}", r1, r2);
 
-    println!("{}", s1);
-}
-
-fn change(some_string: &mut String) {
-    some_string.push_str(", world!"); // 可变引用是可以修改的
+    let r3 = &mut s1;
+    println!("{}", r3);
 }
