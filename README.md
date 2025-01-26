@@ -1,2 +1,1 @@
-# rust-demo
-rust demo
+# rust-train
