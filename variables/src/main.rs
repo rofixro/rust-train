@@ -1,10 +1,5 @@
 fn main() {
-    let a = 1;
-
-    match a {
-        1 => println!("One"),
-        2 => println!("Two"),
-        3 => println!("Three"),
-        _ => println!("Something else"),
+    for number in 0..10 {
+        println!("The number is: {}", number);
     }
-}
+} 
