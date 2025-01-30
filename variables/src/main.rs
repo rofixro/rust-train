@@ -1,11 +1,10 @@
-const MAX_POINTS: u32 = 100_000; // constant
-
 fn main() {
-    let x = 5;
-    let x = x + 1; // shadowing
+    let a = 1;
 
-    let spaces = "    ";
-    let spaces = spaces.len();
-
-    println!("this is the value of spaces: {} {} {}", spaces, x, MAX_POINTS);
+    match a {
+        1 => println!("One"),
+        2 => println!("Two"),
+        3 => println!("Three"),
+        _ => println!("Something else"),
+    }
 }
