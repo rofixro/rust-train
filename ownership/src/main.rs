@@ -1,6 +1,8 @@
-fn main() {
-    let mut s = String::from("Hello");
+// 在 rust 中，对于某一个值。当拥有它的变量离开作用域范围时，内存会立即被释放。
 
-    s.push_str(", World!");
-    println!("s: {}", s);
+fn main() {
+    let s1 = String::from("Hello");
+    let s2 = s1;
+
+    println!("s1: {}", s1);
 }
